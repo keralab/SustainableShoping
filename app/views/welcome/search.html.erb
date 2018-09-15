@@ -1,2 +1,16 @@
-<h1>Welcome to Sustainable Shopping</h1>
+<h1>Sustainable Shopping</h1>
+<div class="page-bg">
+</div>
 <p>Search a type of item to find sustainable products!</p>
+
+<%= form_with scope: :article, url: articles_path, local:
+true do |form| %>
+  <p>
+    <%= form.label :"Enter your item: " %><br>
+    <%= form.text_field :"Enter your item: " %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
