@@ -1,2 +1,16 @@
-<h1>Welcome to Sustainable Shopping!</h1>
-<p>Search a type of item to find a sustainable product!</p>
+<h1>Ecoshop</h1>
+<p>Search for an item to find sustainable options.</p>
+<%= form_tag(welcome_search_path, method: :get) do %>
+    <%= text_field_tag :keyword %>
+    <%= submit_tag 'Search' %>
+  <% end %>
+  <tbody>
+  <tr>
+    <% for result in @results %>
+      <div class='result'>
+          <strong> <%= result["shortDescription"]["value"] %> </strong>
+          <p> <%= result["longDescription"]["value"] %> </p>
+      </div>
+    <% end %>
+   </tr>       
+</tbody>
