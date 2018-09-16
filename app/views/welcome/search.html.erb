@@ -1,22 +1,23 @@
 <div class="header">
-  <h1 style="font-size:7vw"> Eco-Shopping </h1>
+  <h1 style="font-size:7vw"> Eco Shop </h1>
 </div >
+<h2 > Welcome to Eco Shop, a place to find sustainable alternatives to every-day products. </h2>
+<h2 >  Enter the item you're looking for into the search bar to find eco-friendly products. </h2>
 
 <div class="page-bg">
 </div>
 
 <div class="plain-page">
-  <p>Search a type of item to find sustainable products!</p>
 
   <%= form_with scope: :article, url: articles_path, local:
   true do |form| %>
     <p>
-      <%= form.label :"Enter your item: " %><br>
-      <%= form.text_field :"Enter your item: " %>
+      <%= form.label :"" %><br>
+      <%= form.text_field :"" %>
     </p>
 
     <p>
-      <%= form.submit %>
+      <%= form.submit "Search Item" %>
     </p>
   <% end %>
 
