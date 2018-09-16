@@ -19,6 +19,13 @@
      background-image: url(clothes.jpg);
  }
 
+ body.banner-alignment-right #title a {
+   margin-right: -2px;
+   background: black; /* fallback for browsers that do not support rgba */
+   background: rgba(0, 0, 0, 0.5);
+   padding: 20px;
+ }
+
  .page-bg {
    background: url('clothes.jpg');
    -webkit-filter: blur(4px);
@@ -36,10 +43,11 @@
 
  h1 {
       color: #ffd6a8;
-      margin-left: 20px;
+      font-family: "Times New Roman", Times, serif;
+      text-align: center;
 
  }
  p {
      color: #ffd6a8;
-     margin-left: 35px;
+     text-align: center;
  }
